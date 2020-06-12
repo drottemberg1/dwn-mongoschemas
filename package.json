@@ -1,6 +1,6 @@
 {
-  "name": "@davidhunting/mongoschemas",
-  "version": "0.0.37",
+  "name": "dw-mongoschemas",
+  "version": "0.0.1",
   "description": "mongoschemas",
   "main": "index.js",
   "scripts": {
