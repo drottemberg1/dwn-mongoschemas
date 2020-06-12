@@ -51,6 +51,11 @@ module.exports=new mongoose.Schema({
 		required:true,
 		ref:"moods"
 	},
+	type:{
+		type:String,
+		required:true,
+		ref:"usertypes"
+	},
 	verifyPhone:{
 		type:Boolean,
 		required:true
