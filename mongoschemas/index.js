@@ -8,7 +8,7 @@ const QuestionType = require('./questiontype');
 const Response = require('./response');
 const Restriction = require('./restriction');
 const SubCategory = require('./subcategory');
-const Users = require('./users');
+const Users = require('./user');
 const UsersMood = require('./usersmood');
 const UsersType = require('./usertype');
 

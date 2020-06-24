@@ -56,8 +56,19 @@ module.exports=new mongoose.Schema({
 		required:true,
 		ref:"usertypes"
 	},
+	lastLogin:{
+		type: Date
+	},
 	verifyPhone:{
 		type:Boolean,
 		required:true
-	}
+	},
+	ip:{
+		type:String,
+		required:true
+	},
+	userAgent:{
+		type:String,
+		required:true
+	},
 },{bufferCommands:false,collection:"users",timestamps:true,versionKey:false,_id:false,id:false});
