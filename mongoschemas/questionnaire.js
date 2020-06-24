@@ -8,9 +8,11 @@ module.exports=new mongoose.Schema({
 		default:uuid.v1
 	},
 	question:{
-		type:String,
-		required:true,
-		ref:"questions",
+		_id:{
+			type:String,
+			required:true,
+			ref:"questions",
+		},
 		responses:[{
 			type:String,
 			required:true,

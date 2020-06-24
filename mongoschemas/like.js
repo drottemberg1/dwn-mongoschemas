@@ -13,9 +13,12 @@ module.exports=new mongoose.Schema({
 		required:true,
 		ref:"users"
 	},
-	activities:{
+	activity:{
 		type:String,
 		required:true,
 		ref:"activities"
+	},
+	available: {
+		type:Boolean,
 	}
 },{bufferCommands:false,collection:"likes",timestamps:true,versionKey:false,_id:false,id:false});

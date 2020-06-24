@@ -4,6 +4,7 @@ const Like = require('./like');
 const Mood = require('./mood');
 const Question = require('./question');
 const Questionnaire = require('./questionnaire');
+const QuestionnaireSettings = require('./questionnairesettings');
 const QuestionType = require('./questiontype');
 const Response = require('./response');
 const Restriction = require('./restriction');
@@ -25,5 +26,6 @@ module.exports ={
 	SubCategory,
 	Users,
 	UsersMood,
-	UsersType
+	UsersType,
+	QuestionnaireSettings
 };
