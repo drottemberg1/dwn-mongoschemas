@@ -39,7 +39,6 @@ module.exports=new mongoose.Schema({
 	}],
 	passwordResetToken:{
 		type:String,
-		required:false
 	},
 	preferences:[{
 		type:String,
@@ -65,10 +64,8 @@ module.exports=new mongoose.Schema({
 	},
 	ip:{
 		type:String,
-		required:true
 	},
 	userAgent:{
 		type:String,
-		required:true
 	},
 },{bufferCommands:false,collection:"users",timestamps:true,versionKey:false,_id:false,id:false});
