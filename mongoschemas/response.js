@@ -11,4 +11,4 @@ module.exports=new mongoose.Schema({
 		type:String,
 		required:true
 	}
-},{bufferCommands:false,collection:"questionaries",timestamps:true,versionKey:false,_id:false,id:false});
+},{bufferCommands:false,collection:"responses",timestamps:true,versionKey:false,_id:false,id:false});

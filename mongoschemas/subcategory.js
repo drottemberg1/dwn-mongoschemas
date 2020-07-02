@@ -62,11 +62,11 @@ module.exports=new mongoose.Schema({
 	tags:[{
 		type:String
 	}],
-	category:{
+	category:[{
 		type:String,
 		required:true,
 		ref:"categories"
-	},
+	}],
 	moods:[
 		{
 			type:String,
