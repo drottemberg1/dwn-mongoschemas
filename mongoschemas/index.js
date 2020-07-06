@@ -10,6 +10,7 @@ const Response = require('./response');
 const Restriction = require('./restriction');
 const SubCategory = require('./subcategory');
 const Users = require('./user');
+const UsersFriends = require('./usersfriends');
 const UsersMood = require('./usersmood');
 const UsersType = require('./usertype');
 
@@ -25,6 +26,7 @@ module.exports ={
 	Restriction,
 	SubCategory,
 	Users,
+	UsersFriends,
 	UsersMood,
 	UsersType,
 	QuestionnaireSettings

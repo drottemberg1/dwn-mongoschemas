@@ -10,5 +10,8 @@ module.exports=new mongoose.Schema({
 	label:{
 		type:String,
 		required:true
-	}
-},{bufferCommands:false,collection:"responses",timestamps:true,versionKey:false,_id:false,id:false});
+	},
+	order:{
+		type:Number
+	},
+},{bufferCommands:false,collection:"responses",timestamps:true,versionKey:false,_id:false,id:false}).index({order:1});

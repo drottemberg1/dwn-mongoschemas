@@ -2,23 +2,23 @@
 const mongoose=require("mongoose");
 const config=require("getconfig");
 const uuid=require("node-uuid");
-
 module.exports=new mongoose.Schema({
 	_id:{
 		type:String,
 		default:uuid.v1
 	},
-	user:{
+	from:{
 		type:String,
 		required:true,
 		ref:"users"
 	},
-	activity:{
+	to:{
 		type:String,
 		required:true,
-		ref:"activities"
+		ref:"users"
 	},
-	available: {
-		type:Boolean,
-	}
-},{bufferCommands:false,collection:"likes",timestamps:true,versionKey:false,_id:false,id:false}).index({user:1})
+	accepted:{
+		type:Boolean
+	},
+	
+},{bufferCommands:false,collection:"usersfriends",timestamps:true,versionKey:false,_id:false,id:false}).index({createdAt:1,date:1});

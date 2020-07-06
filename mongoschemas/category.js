@@ -18,6 +18,9 @@ module.exports=new mongoose.Schema({
 	url:{
 		type:String
 	},
+	order:{
+		type:Number
+	},
 	cover:{
 		web: {
 			url: {
@@ -63,4 +66,4 @@ module.exports=new mongoose.Schema({
 	tags:[{
 		type:String
 	}]
-},{bufferCommands:false,collection:"categories",timestamps:true,versionKey:false,_id:false,id:false});
+},{bufferCommands:false,collection:"categories",timestamps:true,versionKey:false,_id:false,id:false}).index({order:1,createdAt:1});

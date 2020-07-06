@@ -21,4 +21,4 @@ module.exports=new mongoose.Schema({
 		type:Date,
 		required:true
 	}
-},{bufferCommands:false,collection:"usersmood",timestamps:true,versionKey:false,_id:false,id:false});
+},{bufferCommands:false,collection:"usersmood",timestamps:true,versionKey:false,_id:false,id:false}).index({createdAt:1,date:1});

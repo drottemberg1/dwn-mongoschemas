@@ -116,6 +116,9 @@ module.exports=new mongoose.Schema({
 		}
 	}
 	],
+	order:{
+		type:Number
+	},
 	duration:{
 		type:String
 	},
@@ -125,4 +128,4 @@ module.exports=new mongoose.Schema({
 	date:{
 		type:Date
 	}
-},{bufferCommands:false,collection:"activities",timestamps:true,versionKey:false,_id:false,id:false});
+},{bufferCommands:false,collection:"activities",timestamps:true,versionKey:false,_id:false,id:false}).index({order:1}).index({order:1});

@@ -14,5 +14,8 @@ module.exports=new mongoose.Schema({
 	identifier:{
 		type:String,
 		required:true
-	}
-},{bufferCommands:false,collection:"restrictions",timestamps:true,versionKey:false,_id:false,id:false});
+	},
+	order:{
+		type:Number
+	},
+},{bufferCommands:false,collection:"restrictions",timestamps:true,versionKey:false,_id:false,id:false}).index({order:1});

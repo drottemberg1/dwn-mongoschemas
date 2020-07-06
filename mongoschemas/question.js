@@ -29,4 +29,4 @@ module.exports=new mongoose.Schema({
 		required:true,
 		ref:"responses"
 	}]
-},{bufferCommands:false,collection:"questions",timestamps:true,versionKey:false,_id:false,id:false});
+},{bufferCommands:false,collection:"questions",timestamps:true,versionKey:false,_id:false,id:false}).index({order:1});

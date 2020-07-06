@@ -17,7 +17,6 @@ module.exports=new mongoose.Schema({
 	},
 	phoneNumber:{
 		type:String,
-		required:true
 	},
 	firstName:{
 		type:String,
@@ -47,7 +46,6 @@ module.exports=new mongoose.Schema({
 	}],
 	mood:{
 		type:String,
-		required:true,
 		ref:"moods"
 	},
 	type:{
@@ -68,4 +66,4 @@ module.exports=new mongoose.Schema({
 	userAgent:{
 		type:String,
 	},
-},{bufferCommands:false,collection:"users",timestamps:true,versionKey:false,_id:false,id:false});
+},{bufferCommands:false,collection:"users",timestamps:true,versionKey:false,_id:false,id:false}).index({createdAt:1,lastLogin:1});

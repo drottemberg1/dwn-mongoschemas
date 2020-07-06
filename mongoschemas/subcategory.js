@@ -73,5 +73,8 @@ module.exports=new mongoose.Schema({
 			required:true,
 			ref:"moods"
 		}
-	]
-},{bufferCommands:false,collection:"subcategories",timestamps:true,versionKey:false,_id:false,id:false});
+	],
+	order:{
+		type:Number
+	},
+},{bufferCommands:false,collection:"subcategories",timestamps:true,versionKey:false,_id:false,id:false}).index({order:1});
