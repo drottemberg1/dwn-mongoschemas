@@ -41,7 +41,7 @@ module.exports=new mongoose.Schema({
 		required:true,
 		ref:"subcategories"
 	}],
-	birthday:{$type:Date},
+	birthday:{$type:String},
 	mood:{
 		type:String,
 		ref:"moods"
