@@ -1,1 +1,3 @@
-(cd server && ncu -u -f @smartcollection/validationschemas)
+(git commit -m "up version")
+(npm version patch && npm publish)
+

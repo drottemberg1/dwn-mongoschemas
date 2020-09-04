@@ -13,6 +13,7 @@ const Users = require('./user');
 const UsersFriends = require('./usersfriends');
 const UsersMood = require('./usersmood');
 const UsersType = require('./usertype');
+const FriendRequest = require('./friendrequest');
 
 module.exports ={
 	Activity,
@@ -29,5 +30,6 @@ module.exports ={
 	UsersFriends,
 	UsersMood,
 	UsersType,
-	QuestionnaireSettings
+	QuestionnaireSettings,
+	FriendRequest
 };
