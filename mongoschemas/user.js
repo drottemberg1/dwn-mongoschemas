@@ -54,6 +54,49 @@ module.exports=new mongoose.Schema({
 	lastLogin:{
 		type: Date
 	},
+	profilePicture:{
+		web: {
+			url: {
+				type: String
+			},
+			type: {
+				type: String
+			}
+		},
+		mobile: {
+			url: {
+				type: String
+			},
+			type: {
+				type: String
+			}
+		},
+		original: {
+			url: {
+				type: String
+			},
+			type: {
+				type: String
+			}
+		},
+		webMobile: {
+			url: {
+				type: String
+			},
+			type: {
+				type: String
+			}
+		},
+		mini: {
+			url: {
+				type: String
+			},
+			type: {
+				type: String
+			}
+		}
+	},
+	
 	verifyPhone:{
 		type:Boolean,
 		required:true
