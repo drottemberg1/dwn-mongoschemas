@@ -127,5 +127,11 @@ module.exports=new mongoose.Schema({
 	},
 	date:{
 		type:Date
-	}
+	},
+	url:{
+		type:String
+	},
+	link:{
+		type:String
+	},
 },{bufferCommands:false,collection:"activities",timestamps:true,versionKey:false,_id:false,id:false}).index({order:1}).index({order:1});
