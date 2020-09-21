@@ -134,4 +134,4 @@ module.exports=new mongoose.Schema({
 	link:{
 		type:String
 	},
-},{bufferCommands:false,collection:"activities",timestamps:true,versionKey:false,_id:false,id:false}).index({order:1,subcategories:1,moods:1});
+},{bufferCommands:false,collection:"activities",timestamps:true,versionKey:false,_id:false,id:false}).index({order:1}).index({subcategories:1}).index({moods:1});
