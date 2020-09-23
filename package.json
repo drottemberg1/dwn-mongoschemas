@@ -1,6 +1,6 @@
 {
   "name": "dw-mongoschemas",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "mongoschemas",
   "main": "index.js",
   "scripts": {
