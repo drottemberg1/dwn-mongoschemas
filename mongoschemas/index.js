@@ -13,6 +13,7 @@ const Users = require('./user');
 const UsersFriends = require('./usersfriends');
 const UsersMood = require('./usersmood');
 const UsersType = require('./usertype');
+const BlackListToken = require('./blacklisttokens');
 
 module.exports ={
 	Activity,
@@ -30,4 +31,5 @@ module.exports ={
 	UsersMood,
 	UsersType,
 	QuestionnaireSettings,
+	BlackListToken,
 };
