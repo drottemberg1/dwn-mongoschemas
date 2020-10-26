@@ -13,7 +13,6 @@ module.exports=new mongoose.Schema({
 	},
 	user:{
 		type:String,
-		required:true,
 		ref:"users"
 	}
 },{bufferCommands:false,collection:"blacklisttoken",timestamps:true,versionKey:false,_id:false,id:false});
