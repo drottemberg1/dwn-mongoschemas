@@ -125,6 +125,10 @@ module.exports=new mongoose.Schema({
 	location:{
 		type:String
 	},
+	restrictions:[{
+		type:String,
+		ref:"restrictions"
+	}],
 	date:{
 		type:Date
 	},
