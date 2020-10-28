@@ -123,7 +123,12 @@ module.exports=new mongoose.Schema({
 		type:String
 	},
 	location:{
-		type:String
+		name:{
+			type:String
+		},
+		coordinates:[{
+			type:Number
+		}]
 	},
 	restrictions:[{
 		type:String,
