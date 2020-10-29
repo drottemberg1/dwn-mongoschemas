@@ -127,7 +127,7 @@ module.exports=new mongoose.Schema({
 			type:String
 		},
 		geolocation:{
-			type:String,
+			type:{type:String},
 			coordinates:[{
 				type:Number
 			}]
