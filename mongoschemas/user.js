@@ -20,6 +20,9 @@ module.exports=new mongoose.Schema({
 	firstName:{
 		type:String,
 	},
+	appleId:{
+		type:String,
+	},
 	lastName:{
 		type:String,
 	},
