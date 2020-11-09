@@ -4,7 +4,7 @@
   "description": "mongoschemas",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha test.js",
     "getName": "echo ${npm_package_name}",
     "getVersion": "echo ${npm_package_version}",
     "getNameAndVersion": "echo ${npm_package_name}@${npm_package_version}",
@@ -15,11 +15,12 @@
   "dependencies": {
     "assert": "2.0.0",
     "chai": "4.2.0",
+    "describe": "^1.2.0",
+    "eslint": "6.2.2",
     "mocha": "6.2.0",
     "mongoose": "5.9.5",
     "node-uuid": "1.4.8",
     "nodemon": "1.19.1",
-    "short-unique-id": "1.1.1",
-    "eslint": "6.2.2"
+    "short-unique-id": "1.1.1"
   }
 }
