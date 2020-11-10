@@ -6,7 +6,8 @@ module.exports=new mongoose.Schema({
 	_id:{
 		type:String,
 		default:uuid.v1
-	},	users:[
+	},
+	users:[
 		{
 			type:String,
 			ref:'User'

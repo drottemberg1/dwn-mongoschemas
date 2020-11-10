@@ -4,4 +4,5 @@
 (cd ../dwn-setup/server && ncu -u -f dw-mongoschemas)
 (cd ../dwn-user/server && ncu -u -f dw-mongoschemas)
 (cd ../dwn-web/server && ncu -u -f dw-mongoschemas)
+(cd ../dwn-chat/server && ncu -u -f dw-mongoschemas)
 
