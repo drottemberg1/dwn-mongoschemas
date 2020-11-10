@@ -1,48 +1,46 @@
-'use strict';
-const mongoose=require('mongoose');
-const config=require('getconfig');
+"use strict";
+const mongoose=require("mongoose");
 
-const Schema=mongoose.Schema;
-
-module.exports=new Schema({
+const uuid=require("node-uuid");
+module.exports=new mongoose.Schema({
 	_id:{
-		$type:String,
-		required:true
+		type:String,
+		default:uuid.v1
 	},
 	users:[
 		{
-			$type:String,
+			type:String,
 			ref:'User'
 		}
 	],
 	messages:[
 		{
 			_id:{
-				$type:String,
+				type:String,
 				required:true
 			},
 			user:{
-				$type:String,
+				type:String,
 				ref:'User',
 				required:true
 			},
 			date:{
-				$type:Date,
+				type:Date,
 				required:true
 			},
 			body:{
-				$type:String,
+				type:String,
 				required:true
 			},
 			visibleTo:[
 				{
-					$type:String,
+					type:String,
 					ref:'User'
 				}
 			],
 			viewedBy:[
 				{
-					$type:String,
+					type:String,
 					ref:'User'
 				}
 			]
@@ -50,14 +48,14 @@ module.exports=new Schema({
 	],
 	originalUsers:[
 		{
-			$type:String,
+			type:String,
 			ref:'User'
 		}
 	],
 	deleted:{
-		$type:Boolean
+		type:Boolean
 	},
 	deletionDate:{
-		$type:Date
+		type:Date
 	}
-},{bufferCommands:false,collection:'chats',timestamps:true,typeKey:'$type',useNestedStrict:true,versionKey:false});
+},{bufferCommands:false,collection:"chats",timestamps:true,versionKey:false,_id:false,id:false});
