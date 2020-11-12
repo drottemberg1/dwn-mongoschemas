@@ -99,7 +99,9 @@ module.exports=new mongoose.Schema({
 			}
 		}
 	},
-	
+	bio:{
+		type:String,
+	},
 	verifyPhone:{
 		type:Boolean,
 		required:true

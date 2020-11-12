@@ -18,10 +18,15 @@ describe('# Models should instance ', function () {
 		const Users = mongoose.model('Users', schemas.Users);
 		expect(Users).not.equal(undefined);
 	});
-	
+
 	it('Chat model should instance', function () {
 		const Chat = mongoose.model('Chat', schemas.Chat);
 		expect(Chat).not.equal(undefined);
+	});
+
+	it('ActivitiesReported model should instance', function () {
+		const ActivitiesReported = mongoose.model('ActivitiesReported', schemas.ActivitiesReported);
+		expect(ActivitiesReported).not.equal(undefined);
 	});
 
 });

@@ -15,6 +15,7 @@ const UsersMood = require('./usersmood');
 const UsersType = require('./usertype');
 const BlackListToken = require('./blacklisttokens');
 const Chat = require('./chat');
+const ActivitiesReported = require('./activitiesreported');
 
 module.exports ={
 	Activity,
@@ -33,5 +34,6 @@ module.exports ={
 	UsersType,
 	QuestionnaireSettings,
 	BlackListToken,
-	Chat
+	Chat,
+	ActivitiesReported
 };
