@@ -17,8 +17,5 @@ module.exports=new Schema({
 	token:{
 		type:String,
 		required:true
-	},
-	userAgent:{
-		type:String
 	}
 },{bufferCommands:false,collection:"firebasetokens",timestamps:true,versionKey:false,_id:false,id:false})
