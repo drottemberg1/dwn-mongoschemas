@@ -13,6 +13,7 @@ const Users = require('./user');
 const UsersFriends = require('./usersfriends');
 const UsersMood = require('./usersmood');
 const UsersType = require('./usertype');
+const ReportedType = require('./reportedtype');
 const BlackListToken = require('./blacklisttokens');
 const Chat = require('./chat');
 const ActivitiesReported = require('./activitiesreported');
@@ -37,5 +38,6 @@ module.exports ={
 	BlackListToken,
 	Chat,
 	ActivitiesReported,
-	FirebaseToken
+	FirebaseToken,
+	ReportedType
 };

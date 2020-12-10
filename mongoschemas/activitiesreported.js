@@ -12,6 +12,10 @@ module.exports=new mongoose.Schema({
 		required:true,
 		ref:"activities"
 	},
+	types:[{
+		type:String,
+		ref:"reportedtypes"
+	}],
 	user:{
 		type:String,
 		ref:"users",
