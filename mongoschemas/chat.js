@@ -58,4 +58,4 @@ module.exports=new mongoose.Schema({
 	deletionDate:{
 		type:Date
 	}
-},{bufferCommands:false,collection:"chats",timestamps:true,versionKey:false,_id:false,id:false});
+},{bufferCommands:false,collection:"chats",timestamps:true,versionKey:false,_id:false,id:false}).index({users:1,messages:1});
