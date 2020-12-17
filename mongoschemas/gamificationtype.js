@@ -11,6 +11,10 @@ module.exports=new mongoose.Schema({
 		type: String,
 		required: true
 	},
+	Points: {
+		type: Number,
+		required: true
+	},
 	identifier: {
 		type: String,
 		required: true
