@@ -1,0 +1,20 @@
+"use strict";
+const mongoose=require("mongoose");
+
+const uuid=require("node-uuid");
+module.exports=new mongoose.Schema({
+	_id:{
+		type:String,
+		default:uuid.v1
+	},
+	user: {
+		type: String,
+		required: true,
+		ref:"users"
+	},
+	type: {
+		type: String,
+		required: true,
+		ref:"gamificationtypes"
+	}
+},{bufferCommands:false,collection:"gamificationevents",timestamps:true,versionKey:false,_id:false,id:false});

@@ -18,6 +18,11 @@ const BlackListToken = require('./blacklisttokens');
 const Chat = require('./chat');
 const ActivitiesReported = require('./activitiesreported');
 const FirebaseToken = require('./firebasetoken');
+const Gamification = require('./gamification');
+const GamificationEvent = require('./gamificationevent');
+const GamificationLevel = require('./gamificationlevel');
+const GamificationType = require('./gamificationtype');
+
 
 module.exports ={
 	Activity,
@@ -39,5 +44,9 @@ module.exports ={
 	Chat,
 	ActivitiesReported,
 	FirebaseToken,
-	ReportedType
+	ReportedType,
+	Gamification,
+	GamificationEvent,
+	GamificationLevel,
+	GamificationType
 };
