@@ -19,4 +19,5 @@ module.exports=new mongoose.Schema({
 		type: String,
 		required: true
 	}
+	
 },{bufferCommands:false,collection:"gamificationlevels",timestamps:true,versionKey:false,_id:false,id:false});
