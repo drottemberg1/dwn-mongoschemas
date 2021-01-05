@@ -18,6 +18,14 @@ module.exports=new mongoose.Schema({
 	identifier: {
 		type: String,
 		required: true
+	},
+	texture:{
+		type: String,
+		required: true
+	},
+	fontColor:{
+		type: String,
+		required: true
 	}
 	
 },{bufferCommands:false,collection:"gamificationlevels",timestamps:true,versionKey:false,_id:false,id:false});
