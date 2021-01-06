@@ -66,4 +66,4 @@ module.exports=new mongoose.Schema({
 	tags:[{
 		type:String
 	}]
-},{bufferCommands:false,collection:"categories",timestamps:true,versionKey:false,_id:false,id:false}).index({order:1,createdAt:1});
+},{bufferCommands:false,collection:"categories",timestamps:true,versionKey:false,_id:false,id:false}).index({order:1,createdAt:1,title:1});

@@ -77,4 +77,4 @@ module.exports=new mongoose.Schema({
 	order:{
 		type:Number
 	},
-},{bufferCommands:false,collection:"subcategories",timestamps:true,versionKey:false,_id:false,id:false}).index({order:1});
+},{bufferCommands:false,collection:"subcategories",timestamps:true,versionKey:false,_id:false,id:false}).index({order:1,title:1});
