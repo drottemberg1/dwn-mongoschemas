@@ -20,7 +20,46 @@ module.exports=new mongoose.Schema({
 		required: true
 	},
 	texture:{
-		type: String,
+		web: {
+			url: {
+				type: String
+			},
+			type: {
+				type: String
+			}
+		},
+		mobile: {
+			url: {
+				type: String
+			},
+			type: {
+				type: String
+			}
+		},
+		original: {
+			url: {
+				type: String
+			},
+			type: {
+				type: String
+			}
+		},
+		webMobile: {
+			url: {
+				type: String
+			},
+			type: {
+				type: String
+			}
+		},
+		mini: {
+			url: {
+				type: String
+			},
+			type: {
+				type: String
+			}
+		}
 	},
 	fontColor:{
 		type: String,
