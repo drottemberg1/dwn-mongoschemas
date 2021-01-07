@@ -21,11 +21,9 @@ module.exports=new mongoose.Schema({
 	},
 	texture:{
 		type: String,
-		required: true
 	},
 	fontColor:{
 		type: String,
-		required: true
 	}
 	
 },{bufferCommands:false,collection:"gamificationlevels",timestamps:true,versionKey:false,_id:false,id:false});
