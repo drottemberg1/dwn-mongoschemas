@@ -11,6 +11,7 @@ const Restriction = require('./restriction');
 const SubCategory = require('./subcategory');
 const Users = require('./user');
 const UsersFriends = require('./usersfriends');
+const UsersPendingInvitation = require('./userspendinginvitation');
 const UsersMood = require('./usersmood');
 const UsersType = require('./usertype');
 const ReportedType = require('./reportedtype');
@@ -48,5 +49,6 @@ module.exports ={
 	Gamification,
 	GamificationEvent,
 	GamificationLevel,
-	GamificationType
+	GamificationType,
+	UsersPendingInvitation
 };
