@@ -7,12 +7,12 @@ module.exports=new mongoose.Schema({
 		type:String,
 		default:uuid.v1
 	},
-	from:{
+	userSendInvitation:{
 		type:String,
 		required:true,
 		ref:"users"
 	},
-	to:{
+	numberOfInvitation:{
 		type:String,
 		required:true,
 	},
