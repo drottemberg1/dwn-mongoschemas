@@ -23,6 +23,7 @@ const Gamification = require('./gamification');
 const GamificationEvent = require('./gamificationevent');
 const GamificationLevel = require('./gamificationlevel');
 const GamificationType = require('./gamificationtype');
+const Group = require('./group');
 
 
 module.exports ={
@@ -50,5 +51,6 @@ module.exports ={
 	GamificationEvent,
 	GamificationLevel,
 	GamificationType,
-	UsersPendingInvitation
+	UsersPendingInvitation,
+	Group
 };
