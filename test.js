@@ -29,9 +29,9 @@ describe('# Models should instance ', function () {
 	// 	expect(ActivitiesReported).not.equal(undefined);
 	// });
 	
-	it('FirebaseToken model should instance', function () {
-		const FirebaseToken = mongoose.model('FirebaseToken', schemas.FirebaseToken);
-		expect(FirebaseToken).not.equal(undefined);
+	it('PlansInvitation model should instance', function () {
+		const PlansInvitation = mongoose.model('plansinvitations', schemas.PlansInvitation);
+		expect(PlansInvitation).not.equal(undefined);
 	});
 
 });
