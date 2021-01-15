@@ -55,6 +55,9 @@ module.exports=new mongoose.Schema({
 	deleted:{
 		type:Boolean
 	},
+	isGroup:{
+		type:Boolean
+	},
 	deletionDate:{
 		type:Date
 	}
