@@ -20,6 +20,9 @@ module.exports=new mongoose.Schema({
 		required:true,
 		ref:"subcategories"
 	}],
+	subCategoriesSearch:[{
+		type:String
+	}],
 	cover:{
 		web: {
 			url: {
