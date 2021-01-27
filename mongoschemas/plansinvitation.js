@@ -19,7 +19,6 @@ module.exports=new mongoose.Schema({
 	},
 	group:{
 		type:String,
-		required:false,
 		ref:"groups"
 	},
 	accepted:{
