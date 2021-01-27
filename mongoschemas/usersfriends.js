@@ -23,5 +23,4 @@ module.exports=new mongoose.Schema({
 	pending:{
 		type:Boolean
 	},
-	
 },{bufferCommands:false,collection:"usersfriends",timestamps:true,versionKey:false,_id:false,id:false}).index({createdAt:1,date:1});
