@@ -17,6 +17,9 @@ module.exports=new mongoose.Schema({
 	phoneNumber:{
 		type:String,
 	},
+	phoneCountryCode:{
+		type:String,
+	},
 	firstName:{
 		type:String,
 	},
