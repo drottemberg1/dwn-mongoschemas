@@ -32,4 +32,7 @@ module.exports=new mongoose.Schema({
 		required:true,
 		ref:"plans"
 	},
+	deleted:{
+		type:Boolean
+	},
 },{bufferCommands:false,collection:"plansinvitations",timestamps:true,versionKey:false,_id:false,id:false}).index({createdAt:1}).index({pending:1});
