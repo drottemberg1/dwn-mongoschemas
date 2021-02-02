@@ -109,6 +109,9 @@ module.exports=new mongoose.Schema({
 		type:Boolean,
 		required:true
 	},
+	lastActivity:{
+		type:Date
+	},
 	ip:{
 		type:String,
 	},
