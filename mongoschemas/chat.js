@@ -10,7 +10,7 @@ module.exports=new mongoose.Schema({
 	users:[
 		{
 			type:String,
-			ref:'User'
+			ref:'users'
 		}
 	],
 	messages:[
@@ -21,7 +21,7 @@ module.exports=new mongoose.Schema({
 			},
 			user:{
 				type:String,
-				ref:'User',
+				ref:'users',
 				required:true
 			},
 			date:{
@@ -35,13 +35,13 @@ module.exports=new mongoose.Schema({
 			visibleTo:[
 				{
 					type:String,
-					ref:'User'
+					ref:'users'
 				}
 			],
 			viewedBy:[
 				{
 					type:String,
-					ref:'User'
+					ref:'users'
 				}
 			]
 		}
@@ -49,7 +49,7 @@ module.exports=new mongoose.Schema({
 	originalUsers:[
 		{
 			type:String,
-			ref:'User'
+			ref:'users'
 		}
 	],
 	deleted:{
