@@ -118,4 +118,4 @@ module.exports=new mongoose.Schema({
 	userAgent:{
 		type:String,
 	},
-},{bufferCommands:false,collection:"users",timestamps:true,versionKey:false,_id:false,id:false}).index({createdAt:1,lastLogin:1});
+},{bufferCommands:false,collection:"users",timestamps:true,versionKey:false,_id:false,id:false}).index({createdAt:1,lastLogin:1}).index({"phoneNumber":1,"phoneCountryCode":1},{name:"phone_phoneCountryCode",unique:true,sparse:true});
