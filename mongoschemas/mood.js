@@ -28,6 +28,6 @@ module.exports=new mongoose.Schema({
 		type:Number,
 	},
 	media:{
-		$type:file
+		type:file
 	}
 },{bufferCommands:false,collection:"moods",timestamps:true,versionKey:false,_id:false,id:false}).index({order:1}).index({label:1});
