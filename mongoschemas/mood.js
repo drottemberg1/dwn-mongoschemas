@@ -1,6 +1,6 @@
 "use strict";
 const mongoose=require("mongoose");
-
+const file=require("./file");
 const uuid=require("node-uuid");
 
 module.exports=new mongoose.Schema({
