@@ -26,5 +26,8 @@ module.exports=new mongoose.Schema({
 	},
 	order:{
 		type:Number,
+	},
+	media:{
+		$type:file
 	}
 },{bufferCommands:false,collection:"moods",timestamps:true,versionKey:false,_id:false,id:false}).index({order:1}).index({label:1});
