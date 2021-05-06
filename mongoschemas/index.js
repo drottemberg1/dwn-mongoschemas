@@ -26,6 +26,7 @@ const GamificationType = require('./gamificationtype');
 const Group = require('./group');
 const Plans = require('./plans');
 const PlansInvitation = require('./plansinvitation');
+const messageType = require('./messagetype');
 
 
 module.exports ={
@@ -56,5 +57,6 @@ module.exports ={
 	UsersPendingInvitation,
 	Group,
 	Plans,
-	PlansInvitation
+	PlansInvitation,
+	messageType
 };
