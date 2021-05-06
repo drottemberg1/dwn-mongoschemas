@@ -32,6 +32,11 @@ module.exports=new mongoose.Schema({
 				type:String,
 				required:true
 			},
+			type:{
+				type:String,
+				required:true,
+				ref:'messageTypes'
+			},
 			visibleTo:[
 				{
 					type:String,
