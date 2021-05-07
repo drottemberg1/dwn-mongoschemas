@@ -63,6 +63,13 @@ module.exports=new mongoose.Schema({
 			}
 		}
 	},
+	moods:[
+		{
+			type:String,
+			required:true,
+			ref:"moods"
+		}
+	],
 	tags:[{
 		type:String
 	}]
