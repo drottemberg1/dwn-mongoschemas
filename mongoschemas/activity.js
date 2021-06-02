@@ -143,6 +143,9 @@ module.exports=new mongoose.Schema({
 	date:{
 		type:Date
 	},
+	placeId:{
+		type:String,
+	},
 	url:{
 		type:String
 	},
