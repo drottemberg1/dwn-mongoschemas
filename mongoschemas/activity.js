@@ -152,4 +152,8 @@ module.exports=new mongoose.Schema({
 	link:{
 		type:String
 	},
+	hidden:{
+		type:Boolean,
+		default: true
+	}
 },{bufferCommands:false,collection:"activities",timestamps:true,versionKey:false,_id:false,id:false}).index({order:1}).index({subcategories:1}).index({title:1}).index({moods:1}).index({createdAt:1});
