@@ -161,4 +161,3 @@ module.exports=new mongoose.Schema({
 	.index({title:1})
 	.index({moods:1})
 	.index({createdAt:1})
-	.index({ "location.geolocation": "2d" });
